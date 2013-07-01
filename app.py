@@ -6,7 +6,6 @@ from pony.orm import *
 app = Flask(__name__)
 api = Api(app)
 app.config.from_pyfile('config.cfg')
-db = Database('sqlite', 'db.sqlite',create_db=True)
 
 #controllers imports
 from controllers.index import Index
